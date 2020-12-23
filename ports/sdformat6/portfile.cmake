@@ -3,8 +3,8 @@ vcpkg_fail_port_install(ON_ARCH "arm" ON_TARGET "uwp")
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO osrf/sdformat
-    REF sdformat6_6.2.0
-    SHA512 3d139ec4b4c9fbfd547ed8bfca0adb5cdca92c1b7cc4d4b554a7c51ccf755b9079c26a006ebfedc5bc5b1ba5e16ad950bb38c47ea97bf97e59a2fd7d12d60620
+    REF c6748a3de64d548e95f1690720904e06afc935ef
+    SHA512 7558d6ac6daa3cb0ff08bffcee1e014f8a08f8416ffba3125e229f9a2421b137761da418b308cff12d490feb25cd8effe7c9c6e72df8ccee3227317249b305bd
     HEAD_REF sdf6
 )
 
