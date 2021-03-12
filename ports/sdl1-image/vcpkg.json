@@ -1,0 +1,14 @@
+{
+  "name": "sdl1-image",
+  "version-string": "1.2.12",
+  "homepage": "https://www.libsdl.org/index.php",
+  "description": "SDL_image is an image file loading library with Simple DirectMedia Layer",
+  "dependencies": [
+    "sdl1",
+    "libwebp",
+    "zlib",
+    "libjpeg-turbo",
+    "libpng",
+    "tiff"
+  ]
+}
