@@ -21,6 +21,10 @@ vcpkg_cmake_configure(
         -DCMAKE_USE_PTHREADS_INIT=OFF
     OPTIONS_DEBUG
         -DFORCE_DEBUG_BUILD=True
+    MAYBE_UNUSED_VARIABLES
+        GFLAGS_PREFER_EXPORTED_GFLAGS_CMAKE_CONFIGURATION
+        GLOG_PREFER_EXPORTED_GLOG_CMAKE_CONFIGURATION
+        gtest_disable_pthreads
 )
 
 vcpkg_cmake_install()
