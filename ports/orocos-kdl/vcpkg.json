@@ -1,6 +1,6 @@
 {
   "name": "orocos-kdl",
-  "version": "1.4",
+  "version": "1.5.1",
   "port-version": 5,
   "description": "Kinematics and Dynamics Library.",
   "homepage": "https://github.com/orocos/orocos_kinematics_dynamics",
