@@ -17,7 +17,12 @@ vcpkg_cmake_configure(
 vcpkg_cmake_install()
 vcpkg_cmake_config_fixup(PACKAGE_NAME GKlib)
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
-vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/LICENSE.txt")
+file (INSTALL ${SOURCE_PATH}/LICENSE.txt
+  DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT}
+  RENAME copyright)
+file (INSTALL ${SOURCE_PATH}/LICENSE.txt
+  DESTINATION ${CURRENT_PACKAGES_DIR}/share/${PORT}
+  RENAME copyright)
 file(WRITE "${CURRENT_PACKAGES_DIR}/share/${PORT}/usage" [=[
 gklib provides CMake targets:
     find_package(GKlib CONFIG REQUIRED)
