@@ -15,6 +15,7 @@ vcpkg_from_sourceforge(
         # load either PNG or JPEG files (due to missing GM Modules, with names
         # matching "IM_*.DLL").
         disable_graphicsmagick_modules.patch
+        VS20221.3.crash.patch
 )
 
 file(COPY ${CMAKE_CURRENT_LIST_DIR}/CMakeLists.txt DESTINATION ${SOURCE_PATH})

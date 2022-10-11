@@ -1,0 +1,21 @@
+diff --git a/magick/effect.c b/magick/effect.c
+index 4e4aee2..7ebfd09 100644
+--- a/magick/effect.c
++++ b/magick/effect.c
+@@ -636,6 +636,8 @@ MagickExport MagickPassFail BlackThresholdImage(Image *image,const char *thresho
+ %
+ %
+ */
++#pragma optimize( "", off )
++
+ #define BlurImageColumnsText "[%s] Blur columns: order %lu..."
+ #define BlurImageRowsText "[%s] Blur rows: order %lu...  "
+ static void
+@@ -768,6 +770,7 @@ BlurScanline(const double * restrict kernel,const unsigned long width,
+       destination[x].opacity=(Quantum) (scale*(aggregate.opacity+0.5));
+   }
+ }
++#pragma optimize( "", on )
+ 
+ static int GetBlurKernel(unsigned long width,const double sigma,double **kernel)
+ {
